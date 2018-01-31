@@ -1,13 +1,13 @@
 import mongoose from 'mongoose';
 
 const pruebaSchema = mongoose.Schema({
-    user: {
-        fname: String,
-        lname: String,
-        username: String,
-        password: String
-    },
+    fname: String,
+    lname: String,
+    username: String,
+    password: String,
     desc: String
 });
 
-export default pruebaSchema;
+const pruebaModel = mongoose.model('Prueba', pruebaSchema);
+
+export default pruebaModel;

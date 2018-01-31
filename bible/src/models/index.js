@@ -1,5 +1,5 @@
-import prueba from '../components/prueba/pruebaModel';
+import Prueba from '../components/prueba/pruebaModel';
 
 export default {
-    prueba,
+    Prueba,
 };

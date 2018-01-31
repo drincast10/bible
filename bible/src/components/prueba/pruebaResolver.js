@@ -1,8 +1,9 @@
 export default {
     Query: {
-        getPrueba: () => 'Ejemplo prueba de Ruben'
+        allPrueba: (parent, args, {models}, info) => models.Prueba.find(),
+        getPrueba: (parent, args, {models}, info) => models.Prueba.findOne(args)
     },
     Mutation: {
-        createPrueba: (parent, args, {models}) => models.Post.create({...args.prueba})
+        createPrueba: (parent, args, {models}) => models.Prueba.create(args.prueba)
     }
 }
